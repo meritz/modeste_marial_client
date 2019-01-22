@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      DEDICACES
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding style="background-color: darkblue;">
+    <ion-item>
+      <ion-textarea required type="text" placeholder="entre votre Nom et prenom" [(ngModel)]="todo.nom"></ion-textarea>
+    </ion-item>
+
+    <!-- Textarea in an item with a floating label -->
+    <ion-item>
+      <ion-label position="floating">Message</ion-label>
+      <ion-textarea maxlength="308" required type="text" placeholder="message" [(ngModel)]="todo.task"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Phone</ion-label>
+      <ion-input type="tel" required placeholder="numero" [(ngModel)]="todo.telephone"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>le moyenne de don</ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>T-Monye</ion-label>
+          <ion-radio slot="start" value="biff" checked></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Flooz</ion-label>
+          <ion-radio slot="start" value="griff"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-item>
+      <ion-label position="floating">code secret</ion-label>
+      <ion-input type="password" required placeholder="code" ></ion-input>
+    </ion-item>
+    <ion-button expand="full" (click)="saveTodo()"  color="primary">CONFIRMER</ion-button>
+</ion-content>

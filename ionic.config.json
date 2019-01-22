@@ -1,0 +1,7 @@
+{
+  "name": "radiomariaall",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

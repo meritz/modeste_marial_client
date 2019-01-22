@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      FAIRE UN DON
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+      <ion-textarea placeholder="nom/prenom"></ion-textarea>
+    </ion-item>
+    <!-- Textarea in an item with a floating label -->
+    
+    <ion-item>
+      <ion-label position="floating">email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>le moyenne de don</ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>T-Monye</ion-label>
+          <ion-radio slot="start" value="biff" checked></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Flooz</ion-label>
+          <ion-radio slot="start" value="griff"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-item>
+      <ion-label position="floating">Phone</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>LE MOTANT</ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>200</ion-label>
+          <ion-radio slot="start" value="200" checked></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>500</ion-label>
+          <ion-radio slot="start" value="500"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>1000</ion-label>
+          <ion-radio slot="start" value="1000"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>2000</ion-label>
+          <ion-radio slot="start" value="2000"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>5000</ion-label>
+          <ion-radio slot="start" value="5000"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>10000</ion-label>
+          <ion-radio slot="start" value="10000"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-item>
+      <ion-label position="floating">code secret</ion-label>
+      <ion-input type="password" required placeholder="code" ></ion-input>
+    </ion-item>
+    
+    <ion-button expand="block" color="primary">CONFIRMER</ion-button>
+ 
+</ion-content>
